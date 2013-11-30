@@ -1,0 +1,366 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASM	Makefile	/^ASM = nasm$/;"	m
+ASM_FLAGS	Makefile	/^ASM_FLAGS = -f elf -g$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+COMMON_H	include/common.h	20;"	d
+C_FLAGS	Makefile	/^C_FLAGS = -c -Wall -m32 -ggdb -gstabs+ -nostdinc -fno-builtin -fno-stack-protector -I include$/;"	m
+C_OBJECTS	Makefile	/^C_OBJECTS = $(patsubst %.c, %.o, $(C_SOURCES))$/;"	m
+C_SOURCES	Makefile	/^C_SOURCES = $(shell find . -name "*.c")$/;"	m
+DESCRIPTOR_TABLES_H	include/descriptor_tables.h	22;"	d
+HEAP_END	include/heap.h	24;"	d
+HEAP_H	include/heap.h	19;"	d
+HEAP_START	include/heap.h	23;"	d
+IDT_TABLES_H	include/idt_tables.h	19;"	d
+INCLUDE_MULTIBOOT_H_	include/multiboot.h	19;"	d
+IRQ	common/interrupt.s	/^IRQ      0    ,  32   ;系统计时器$/;"	l
+IRQ	common/interrupt.s	/^IRQ      1    ,  33   ;键盘$/;"	l
+IRQ	common/interrupt.s	/^IRQ      10   ,  42   ;网卡$/;"	l
+IRQ	common/interrupt.s	/^IRQ      11   ,  43   ;显卡$/;"	l
+IRQ	common/interrupt.s	/^IRQ      12   ,  44   ;ps\/2 鼠标$/;"	l
+IRQ	common/interrupt.s	/^IRQ      13   ,  45   ;协处理器$/;"	l
+IRQ	common/interrupt.s	/^IRQ      14   ,  46   ;IDE0 传输控制用$/;"	l
+IRQ	common/interrupt.s	/^IRQ      15   ,  47   ;IDE1 传输控制用$/;"	l
+IRQ	common/interrupt.s	/^IRQ      2    ,  34   ;与IRQ9相连$/;"	l
+IRQ	common/interrupt.s	/^IRQ      3    ,  35   ;串口设备$/;"	l
+IRQ	common/interrupt.s	/^IRQ      4    ,  36   ;串口设备$/;"	l
+IRQ	common/interrupt.s	/^IRQ      5    ,  37   ;声卡$/;"	l
+IRQ	common/interrupt.s	/^IRQ      6    ,  38   ;软驱传输控制用$/;"	l
+IRQ	common/interrupt.s	/^IRQ      7    ,  39   ;打印机传输控制用$/;"	l
+IRQ	common/interrupt.s	/^IRQ      8    ,  40   ;IRC时钟$/;"	l
+IRQ	common/interrupt.s	/^IRQ      9    ,  41   ;与IRQ2相连$/;"	l
+IRQ0	include/isr.h	24;"	d
+IRQ1	include/isr.h	25;"	d
+IRQ10	include/isr.h	34;"	d
+IRQ11	include/isr.h	35;"	d
+IRQ12	include/isr.h	36;"	d
+IRQ13	include/isr.h	37;"	d
+IRQ14	include/isr.h	38;"	d
+IRQ15	include/isr.h	39;"	d
+IRQ2	include/isr.h	26;"	d
+IRQ3	include/isr.h	27;"	d
+IRQ4	include/isr.h	28;"	d
+IRQ5	include/isr.h	29;"	d
+IRQ6	include/isr.h	30;"	d
+IRQ7	include/isr.h	31;"	d
+IRQ8	include/isr.h	32;"	d
+IRQ9	include/isr.h	33;"	d
+ISR_ERROR	common/interrupt.s	/^ISR_ERROR        10$/;"	l
+ISR_ERROR	common/interrupt.s	/^ISR_ERROR        11$/;"	l
+ISR_ERROR	common/interrupt.s	/^ISR_ERROR        12$/;"	l
+ISR_ERROR	common/interrupt.s	/^ISR_ERROR        13$/;"	l
+ISR_ERROR	common/interrupt.s	/^ISR_ERROR        14$/;"	l
+ISR_ERROR	common/interrupt.s	/^ISR_ERROR        8$/;"	l
+ISR_H	include/isr.h	20;"	d
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    0   $/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    1$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    15$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    16$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    17$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    18$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    19$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    2$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    20$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    21$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    22$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    23$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    24$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    25$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    255 $/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    26$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    27$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    28$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    29$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    3$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    30$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    31$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    4$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    5$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    6$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    7$/;"	l
+ISR_NOERRCODE	common/interrupt.s	/^ISR_NOERRCODE    9$/;"	l
+KEYBOARD_H	include/keyboard.h	19;"	d
+LD	Makefile	/^LD = ld$/;"	m
+LD_FLAGS	Makefile	/^LD_FLAGS = -T scripts\/kernel.ld -m elf_i386 -nostblib  # -T :是指定链接控制脚本$/;"	m
+MBOOT_CHECKSUM	boot/boot.s	/^MBOOT_CHECKSUM      equ -(MBOOT_HEADER_MAGIC + MBOOT_HEADER_FLAGS)$/;"	d
+MBOOT_HEADER_FLAGS	boot/boot.s	/^MBOOT_HEADER_FLAGS  equ MBOOT_PAGE_ALIGN | MBOOT_MEM_INFO   ; 多重引导头的开始地址，在那里寻找magic值的物理地址, 这个字段用来同步os image 偏移和物                                                             ; 理地址之间的映射$/;"	d
+MBOOT_HEADER_MAGIC	boot/boot.s	/^MBOOT_HEADER_MAGIC  equ 0x1BADB002 ;魔数（用来表识多重引导头）$/;"	d
+MBOOT_MEM_INFO	boot/boot.s	/^MBOOT_MEM_INFO      equ 1<<1       ;内存的信息$/;"	d
+MBOOT_PAGE_ALIGN	boot/boot.s	/^MBOOT_PAGE_ALIGN    equ 1<<0       ;以页对齐 (操作系统需要boot loader具有的特性) $/;"	d
+MM_H	include/mm.h	20;"	d
+MONTIOR_H	common/montior.h	21;"	d
+MONTIOR_H	include/montior.h	21;"	d
+MULTIBOOT_FLAG_AOUT	include/multiboot.h	29;"	d
+MULTIBOOT_FLAG_APM	include/multiboot.h	34;"	d
+MULTIBOOT_FLAG_CMDLINE	include/multiboot.h	27;"	d
+MULTIBOOT_FLAG_CONFIG	include/multiboot.h	32;"	d
+MULTIBOOT_FLAG_DEVICE	include/multiboot.h	26;"	d
+MULTIBOOT_FLAG_ELF	include/multiboot.h	30;"	d
+MULTIBOOT_FLAG_LOADER	include/multiboot.h	33;"	d
+MULTIBOOT_FLAG_MEM	include/multiboot.h	25;"	d
+MULTIBOOT_FLAG_MMAP	include/multiboot.h	31;"	d
+MULTIBOOT_FLAG_MODS	include/multiboot.h	28;"	d
+MULTIBOOT_FLAG_VBE	include/multiboot.h	35;"	d
+PAGE_DIR_IDX	include/mm.h	39;"	d
+PAGE_DIR_VIRTUAL_ADDR	include/mm.h	34;"	d
+PAGE_MASK	include/mm.h	32;"	d
+PAGE_PRESENT	include/mm.h	29;"	d
+PAGE_TABLE_IDX	include/mm.h	41;"	d
+PAGE_TABLE_VIRTUAL_ADDR	include/mm.h	35;"	d
+PAGE_USER	include/mm.h	31;"	d
+PAGE_WRITE	include/mm.h	30;"	d
+PMM_STACK_ADDR	include/mm.h	36;"	d
+PRINTK_H	include/printk.h	20;"	d
+SCHEDULE_H	include/schedule.h	21;"	d
+SIZE	montior/montior.c	20;"	d	file:
+STACK_SIZE	include/thread.h	24;"	d
+STRINT_H	include/string.h	20;"	d
+S_OBJECTS	Makefile	/^S_OBJECTS = $(patsubst %.s, %.o, $(S_SOURCES))$/;"	m
+S_SOURCES	Makefile	/^S_SOURCES = $(shell find . -name "*.s")$/;"	m
+Segmet_Max	common/descriptor_tables.c	23;"	d	file:
+TASK_RUNNABLE	include/thread.h	/^	TASK_RUNNABLE = 2,\/\/可运行$/;"	e	enum:task_state
+TASK_SLEEPING	include/thread.h	/^	TASK_SLEEPING = 1,\/\/睡眠中$/;"	e	enum:task_state
+TASK_UNINIT	include/thread.h	/^	TASK_UNINIT   = 0,\/\/未初始化$/;"	e	enum:task_state
+TASK_ZOMBIE	include/thread.h	/^	TASK_ZOMBIE = 3 , \/\/僵死状态$/;"	e	enum:task_state
+THREAD_H	include/thread.h	20;"	d
+TIMER_H	include/timer.h	20;"	d
+Task_State	include/thread.h	/^}Task_State;$/;"	t	typeref:enum:task_state
+_INTSIZEOF	include/printk.h	27;"	d
+access	include/descriptor_tables.h	/^	u8int    access ; \/\/段的描述， 其中包括（段是否在内存中，特权，类型 以及段的可读可写）$/;"	m	struct:gdt_entry_struct
+add	common/interrupt.s	/^add  esp , 4$/;"	l
+add	common/interrupt.s	/^add esp , 8 $/;"	l
+addr	include/multiboot.h	/^	u32int addr;$/;"	m	struct:multiboot_t
+alloc_chunk	common/heap.c	/^void alloc_chunk (u32int start , u32int len)$/;"	f
+allocated	include/heap.h	/^	u32int   allocated :1 ;  \/\/是否已经被分配，如果分配了就是1，没有分配是0$/;"	m	struct:header
+always0	include/idt_tables.h	/^	u8int    always0 ;   \/\/必须是0（unused）$/;"	m	struct:idt_entry_struct
+apm_table	include/multiboot.h	/^	u32int apm_table;$/;"	m	struct:multiboot_t
+base	include/descriptor_tables.h	/^	u32int base ;  \/\/段基址  (第一个gdt_first_struct 的地址)$/;"	m	struct:gdt_ptr_struct
+base	include/idt_tables.h	/^	u32int   base  ; \/\/这个地址描述的是在idt_entry_t array 中第一个元素的地址$/;"	m	struct:idt_ptr_struct
+base_addr_high	include/multiboot.h	/^	u32int  base_addr_high ; \/\/主要是为了64位的扩展 $/;"	m	struct:mmap_entry_t
+base_addr_low	include/multiboot.h	/^        u32int  base_addr_low ; $/;"	m	struct:mmap_entry_t
+base_high	include/descriptor_tables.h	/^	u8int    base_high ; \/\/基地址的高8位地址 （24~32）$/;"	m	struct:gdt_entry_struct
+base_low	include/descriptor_tables.h	/^	u16int   base_low ;   \/\/段基址的低15位  (0~15)$/;"	m	struct:gdt_entry_struct
+base_middle	include/descriptor_tables.h	/^	u8int    base_middle ;  \/\/基址的中间8位(16~24)$/;"	m	struct:gdt_entry_struct
+boot_device	include/multiboot.h	/^	u32int boot_device;  \/\/引导程序从那个bios磁盘设备载入的OS映像$/;"	m	struct:multiboot_t
+boot_loader_name	include/multiboot.h	/^	u32int boot_loader_name;$/;"	m	struct:multiboot_t
+call	common/interrupt.s	/^call irq_handler $/;"	l
+change_task_to	common/schedule.c	/^void change_task_to (struct task_struct *next)$/;"	f
+cli	common/interrupt.s	/^cli $/;"	l
+cmdline	include/multiboot.h	/^	u32int cmdline;  \/\/内核命令行$/;"	m	struct:multiboot_t
+config_table	include/multiboot.h	/^	u32int config_table;$/;"	m	struct:multiboot_t
+context	include/thread.h	/^        context_t             context ; \/\/进程切换需要上下文信息$/;"	m	struct:task_struct
+context	include/thread.h	/^typedef struct context$/;"	s
+context_t	include/thread.h	/^}context_t ;$/;"	t	typeref:struct:context
+create_thread	common/thread.c	/^u32int  create_thread (u32int (*fn) (void *), void *arg)$/;"	f
+cs	include/isr.h	/^	u32int    eip , cs , eflags , useresp , ss ;$/;"	m	struct:registers
+current	common/schedule.c	/^struct task_struct  *current = 0 ; $/;"	v	typeref:struct:task_struct
+current_directory	common/vmm.c	/^page_directory_t   *current_directory ;$/;"	v
+cursor_x	montior/montior.c	/^u16int      cursor_x  = 0 ;$/;"	v
+cursor_y	montior/montior.c	/^u16int      cursor_y  = 0 ;$/;"	v
+drives_addr	include/multiboot.h	/^	u32int drives_addr;$/;"	m	struct:multiboot_t
+drives_length	include/multiboot.h	/^	u32int drives_length;$/;"	m	struct:multiboot_t
+ds	include/isr.h	/^	u32int    ds  ; \/\/数据段选择子$/;"	m	struct:registers
+eax	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+ebp	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+ebp	include/thread.h	/^	u32int   ebp;$/;"	m	struct:context
+ebx	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+ebx	include/thread.h	/^	u32int   ebx;$/;"	m	struct:context
+ecx	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+edi	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+edi	include/thread.h	/^	u32int   edi;$/;"	m	struct:context
+edx	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+eflags	include/isr.h	/^	u32int    eip , cs , eflags , useresp , ss ;$/;"	m	struct:registers
+eflags	include/thread.h	/^        u32int   eflags; $/;"	m	struct:context
+eip	include/isr.h	/^	u32int    eip , cs , eflags , useresp , ss ;$/;"	m	struct:registers
+error_code	include/isr.h	/^	u32int    int_no , error_code ;\/\/中断号， 错误号码$/;"	m	struct:registers
+esi	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+esi	include/thread.h	/^	u32int   esi;$/;"	m	struct:context
+esp	include/isr.h	/^	u32int    edi , esi , ebp , esp , ebx , edx, ecx, eax ; \/\/pusha $/;"	m	struct:registers
+esp	include/thread.h	/^	u32int   esp;$/;"	m	struct:context
+flag	entry/main.c	/^int flag = 0 ;$/;"	v
+flag	include/idt_tables.h	/^	u8int    flag  ;     \/\/其中包含 (P， DPL ， )$/;"	m	struct:idt_entry_struct
+flags	include/multiboot.h	/^	u32int flags ;   \/\/版本的信息$/;"	m	struct:multiboot_t
+free_chunk	common/heap.c	/^void free_chunk (header_t *chunk )$/;"	f
+gdt_entries	common/descriptor_tables.c	/^gdt_entry_t     gdt_entries[Segmet_Max];$/;"	v
+gdt_entry_struct	include/descriptor_tables.h	/^struct gdt_entry_struct$/;"	s
+gdt_entry_t	include/descriptor_tables.h	/^typedef struct gdt_entry_struct  gdt_entry_t ;$/;"	t	typeref:struct:gdt_entry_struct
+gdt_flush	common/gdt_s.s	/^gdt_flush :$/;"	l
+gdt_ptr	common/descriptor_tables.c	/^gdt_ptr_t       gdt_ptr ;$/;"	v
+gdt_ptr_struct	include/descriptor_tables.h	/^struct gdt_ptr_struct $/;"	s
+gdt_ptr_t	include/descriptor_tables.h	/^typedef struct gdt_ptr_struct   gdt_ptr_t ;$/;"	t	typeref:struct:gdt_ptr_struct
+gdt_set_gate	common/descriptor_tables.c	/^static void gdt_set_gate (s32int num, u32int base , u32int limit , u8int access , u8int gran )$/;"	f	file:
+get_mapping	common/vmm.c	/^int  get_mapping (u32int va , u32int *pa)$/;"	f
+global	common/interrupt.s	/^global irq%1$/;"	l
+glue_chunk	common/heap.c	/^void glue_chunk (header_t *chunk)$/;"	f
+granularity	include/descriptor_tables.h	/^        u8int    granularity; \/\/ 其中包括(粒度， 32位\/16位，0，是否被系统已经访问，段界限  )$/;"	m	struct:gdt_entry_struct
+header	include/heap.h	/^typedef struct header$/;"	s
+header_t	include/heap.h	/^}header_t ;$/;"	t	typeref:struct:header
+heap_first	common/heap.c	/^header_t *heap_first =  0 ;$/;"	v
+heap_max	common/heap.c	/^u32int  heap_max = HEAP_START ;$/;"	v
+idt_entries	common/idt_descriptor.c	/^idt_entry_t   idt_entries[256];$/;"	v
+idt_entry_struct	include/idt_tables.h	/^struct idt_entry_struct $/;"	s
+idt_entry_t	include/idt_tables.h	/^typedef struct idt_entry_struct  idt_entry_t ;$/;"	t	typeref:struct:idt_entry_struct
+idt_flush	common/idt_s.s	/^idt_flush :$/;"	l
+idt_ptr	common/idt_descriptor.c	/^idt_ptr_t     idt_ptr ;$/;"	v
+idt_ptr_struct	include/idt_tables.h	/^struct idt_ptr_struct $/;"	s
+idt_ptr_t	include/idt_tables.h	/^typedef struct idt_ptr_struct    idt_ptr_t ;$/;"	t	typeref:struct:idt_ptr_struct
+idt_set_gate	common/idt_descriptor.c	/^static void idt_set_gate (u8int num , u32int base , u16int sel ,u8int flags)$/;"	f	file:
+inb	common/common.c	/^u8int inb (u16int port )$/;"	f
+init_gdt	common/descriptor_tables.c	/^void init_gdt () $/;"	f
+init_idt	common/idt_descriptor.c	/^void init_idt () $/;"	f
+init_page_pmm	common/mm.c	/^void init_page_pmm (multiboot_t  *mboot_ptr)$/;"	f
+init_pmm	common/mm.c	/^void init_pmm (struct multiboot_t *mboot_ptr)$/;"	f
+init_schedule	common/schedule.c	/^void init_schedule ()$/;"	f
+init_timer	common/timer.c	/^void init_timer (u32int frequency)$/;"	f
+init_vmm	common/vmm.c	/^void init_vmm () $/;"	f
+int_no	include/isr.h	/^	u32int    int_no , error_code ;\/\/中断号， 错误号码$/;"	m	struct:registers
+interrupt_handlers	include/isr.h	/^isr_t    interrupt_handlers[256];$/;"	v
+inw	common/common.c	/^u16int inw (u16int port)$/;"	f
+iret	common/interrupt.s	/^iret$/;"	l
+irq_common_stub	common/interrupt.s	/^irq_common_stub:$/;"	l
+irq_handler	common/isr.c	/^void irq_handler (registers_t  *regs)$/;"	f
+isr_common_stub	common/interrupt.s	/^isr_common_stub:$/;"	l
+isr_handler	common/isr.c	/^void isr_handler (registers_t  *regs)$/;"	f
+isr_t	include/isr.h	/^typedef void  (*isr_t)  (registers_t *);$/;"	t
+jmp	common/gdt_s.s	/^jmp 0x08:.flush   ; 0x08 不是地址，是段选择子，描述符索引是1，就是在全局描述符中定义的代码段$/;"	l
+jmp	common/interrupt.s	/^jmp irq_common_stub$/;"	l
+kern_stack_top	common/schedule.c	/^int kern_stack_top ;$/;"	v
+kfree	common/heap.c	/^void kfree (void *p)$/;"	f
+kmalloc	common/heap.c	/^void *kmalloc (u32int len )$/;"	f
+length	include/heap.h	/^	u32int   length  :31; $/;"	m	struct:header
+length_high	include/multiboot.h	/^	u32int  length_high ;  \/\/主要是对64位的扩展$/;"	m	struct:mmap_entry_t
+length_low	include/multiboot.h	/^	u32int  length_low ;$/;"	m	struct:mmap_entry_t
+lgdt	common/gdt_s.s	/^lgdt  [eax]          ; 加载gdt $/;"	l
+lidt	common/idt_s.s	/^lidt [eax]$/;"	l
+limit	include/descriptor_tables.h	/^	u16int limit ;  \/\/段描述符的大小-第一个gdt_first_struct后的大小（偏移）$/;"	m	struct:gdt_ptr_struct
+limit	include/idt_tables.h	/^	u16int   limit ;\/\/定义中断描述符表的界限$/;"	m	struct:idt_ptr_struct
+limit_low	include/descriptor_tables.h	/^	u16int   limit_low;   \/\/段限长的低15位  (0~ 15)$/;"	m	struct:gdt_entry_struct
+main	entry/main.c	/^int main(struct multiboot_t *mboot_ptr)$/;"	f
+map	common/vmm.c	/^void map (u32int va , u32int pa , u32int flags)$/;"	f
+mboot	boot/boot.s	/^mboot:$/;"	l
+mem_lower	include/multiboot.h	/^	u32int mem_lower; $/;"	m	struct:multiboot_t
+mem_upper	include/multiboot.h	/^	u32int mem_upper;$/;"	m	struct:multiboot_t
+memcpy	string/string.c	/^inline void memcpy(u8int *dest, const u8int *src, u32int len)$/;"	f
+memset	string/string.c	/^inline void memset(u8int *dest, u8int val, u32int len)$/;"	f
+mm_paging_active	common/mm.c	/^char mm_paging_active = 0 ;$/;"	v
+mmap_addr	include/multiboot.h	/^	u32int mmap_addr;$/;"	m	struct:multiboot_t
+mmap_entry_t	include/multiboot.h	/^typedef struct mmap_entry_t $/;"	s
+mmap_entry_t	include/multiboot.h	/^}__attribute__((packed))mmap_entry_t; $/;"	t	typeref:struct:mmap_entry_t
+mmap_length	include/multiboot.h	/^	u32int mmap_length;$/;"	m	struct:multiboot_t
+mods_addr	include/multiboot.h	/^	u32int mods_addr;$/;"	m	struct:multiboot_t
+mods_count	include/multiboot.h	/^	u32int mods_count; \/\/boot 模块列表$/;"	m	struct:multiboot_t
+monitor_clear	montior/montior.c	/^void monitor_clear () $/;"	f
+monitor_put	montior/montior.c	/^void monitor_put (char c )$/;"	f
+monitor_write	montior/montior.c	/^void monitor_write (char * c)$/;"	f
+monitor_write_dec	montior/montior.c	/^void monitor_write_dec(u32int n)$/;"	f
+monitor_write_hex	montior/montior.c	/^void monitor_write_hex (u32int  n)$/;"	f
+mov	common/gdt_s.s	/^mov   eax  , [esp+4] ; eax 里面保存的是gdt_ptr , 得到指向GDT的指针，通过参数传递 ;$/;"	l
+mov	common/gdt_s.s	/^mov  ax , 0x10  ;  全局描述符表中的数据段$/;"	l
+mov	common/gdt_s.s	/^mov  ds , ax $/;"	d
+mov	common/gdt_s.s	/^mov  es , ax $/;"	l
+mov	common/gdt_s.s	/^mov  fs , ax $/;"	l
+mov	common/gdt_s.s	/^mov  gs , ax $/;"	l
+mov	common/gdt_s.s	/^mov  ss , ax $/;"	l
+mov	common/idt_s.s	/^mov   eax , [esp +4 ]$/;"	l
+mov	common/interrupt.s	/^    mov  ds  ,ax $/;"	d
+mov	common/interrupt.s	/^    mov ds  ,ax  $/;"	d
+mov	common/interrupt.s	/^mov   ax , ds$/;"	l
+mov	common/interrupt.s	/^mov  ax , 0x10 $/;"	l
+mov	common/interrupt.s	/^mov  ds , ax $/;"	d
+mov	common/interrupt.s	/^mov  es , ax$/;"	l
+mov	common/interrupt.s	/^mov  fs , ax $/;"	l
+mov	common/interrupt.s	/^mov  gs , ax$/;"	l
+mov	common/interrupt.s	/^mov  ss , ax $/;"	l
+mov	common/interrupt.s	/^mov ds , bx$/;"	d
+mov	common/interrupt.s	/^mov es , bx$/;"	l
+mov	common/interrupt.s	/^mov fs , bx$/;"	l
+mov	common/interrupt.s	/^mov gs , bx $/;"	l
+mov	common/interrupt.s	/^mov ss , bx $/;"	l
+move_cursor	montior/montior.c	/^void move_cursor () $/;"	f
+multiboot_t	include/multiboot.h	/^typedef struct multiboot_t {$/;"	s
+multiboot_t	include/multiboot.h	/^}__attribute__((packed))multiboot_t;$/;"	t	typeref:struct:multiboot_t
+next	include/heap.h	/^	struct header *prev , *next ;$/;"	m	struct:header	typeref:struct:header::
+next	include/thread.h	/^        struct task_struct    *next ; \/\/链表指针  $/;"	m	struct:task_struct	typeref:struct:task_struct::task_struct
+now_pid	common/thread.c	/^u32int now_pid = 0 ;$/;"	v
+num	include/multiboot.h	/^	u32int num;$/;"	m	struct:multiboot_t
+offset_1	include/idt_tables.h	/^	u16int   offset_1 ;  \/\/中断处理过程在目标代码段内的偏移的低16位$/;"	m	struct:idt_entry_struct
+offset_2	include/idt_tables.h	/^	u16int   offset_2 ; \/\/中断处理过程在目标代码段内的偏移的高16位$/;"	m	struct:idt_entry_struct
+outb	common/common.c	/^void outb (u16int port , u8int value)$/;"	f
+page_directory	common/vmm.c	/^u32int *page_directory = (u32int*)PAGE_DIR_VIRTUAL_ADDR ;$/;"	v
+page_directory_t	include/mm.h	/^typedef u32int  page_directory_t  ; $/;"	t
+page_fault	common/vmm.c	/^void page_fault (registers_t  *regs)$/;"	f
+page_tables	common/vmm.c	/^u32int *page_tables = (u32int*)PAGE_TABLE_VIRTUAL_ADDR ;$/;"	v
+pid	include/thread.h	/^	u32int                pid  ; \/\/进程的表示符$/;"	m	struct:task_struct
+pmm_alloc_page	common/mm.c	/^u32int pmm_alloc_page () $/;"	f
+pmm_free_page	common/mm.c	/^void pmm_free_page (u32int  p ) $/;"	f
+pmm_location	common/mm.c	/^u32int pmm_location ;$/;"	v
+pmm_stack_loc	common/mm.c	/^u32int pmm_stack_loc =  PMM_STACK_ADDR ;  \/\/栈指针$/;"	v
+pmm_stack_max	common/mm.c	/^u32int pmm_stack_max =  PMM_STACK_ADDR ;  \/\/内存申请的界限$/;"	v
+pop	common/interrupt.s	/^pop ebx $/;"	l
+popa	common/interrupt.s	/^popa $/;"	l
+prev	include/heap.h	/^	struct header *prev , *next ;$/;"	m	struct:header	typeref:struct:header::header
+printk	montior/printk.c	/^int printk (va_list format,... )$/;"	f
+push	common/interrupt.s	/^push  eax $/;"	l
+push	common/interrupt.s	/^push %2 $/;"	l
+push	common/interrupt.s	/^push 0 $/;"	l
+push	common/interrupt.s	/^push esp $/;"	l
+pusha	common/interrupt.s	/^pusha $/;"	l
+register_interrupt_handler	common/isr.c	/^void register_interrupt_handler (u8int n , isr_t handler)$/;"	f
+registers	include/isr.h	/^typedef struct registers $/;"	s
+registers_t	include/isr.h	/^}registers_t ;$/;"	t	typeref:struct:registers
+ret	common/gdt_s.s	/^ret $/;"	l
+ret	common/idt_s.s	/^ret $/;"	l
+running_proc_head	common/schedule.c	/^struct task_struct  *running_proc_head = 0 ;$/;"	v	typeref:struct:task_struct
+s16int	include/common.h	/^typedef          short s16int ;$/;"	t
+s32int	include/common.h	/^typedef          int   s32int ;$/;"	t
+s8int	include/common.h	/^typedef          char  s8int  ;$/;"	t
+schedule	common/schedule.c	/^void schedule () $/;"	f
+scroll	montior/montior.c	/^void scroll () $/;"	f
+section	boot/boot.s	/^section .bss$/;"	l
+section	boot/boot.s	/^section .text$/;"	l
+self	include/idt_tables.h	/^	u16int   self  ;     \/\/代码段描述符选择子$/;"	m	struct:idt_entry_struct
+shndx	include/multiboot.h	/^	u32int shndx;$/;"	m	struct:multiboot_t
+size	include/multiboot.h	/^	u32int  size ; \/\/留意size是不含size自身变量的大小$/;"	m	struct:mmap_entry_t
+size	include/multiboot.h	/^	u32int size;$/;"	m	struct:multiboot_t
+split_chunk	common/heap.c	/^void split_chunk (header_t *chunk , u32int len)$/;"	f
+ss	include/isr.h	/^	u32int    eip , cs , eflags , useresp , ss ;$/;"	m	struct:registers
+stack	boot/boot.s	/^stack:$/;"	l
+stack	include/thread.h	/^        void                  *stack ; \/\/进程的内核栈地址$/;"	m	struct:task_struct
+start	boot/boot.s	/^start:$/;"	l
+state	include/thread.h	/^	volatile              Task_State  state ; \/\/进程当前的状态$/;"	m	struct:task_struct
+sti	common/interrupt.s	/^sti$/;"	l
+strcat	string/string.c	/^inline char *strcat(char *dest, const char *src)$/;"	f
+strcmp	string/string.c	/^inline int strcmp(const char *str1, const char *str2)$/;"	f
+strcpy	string/string.c	/^inline char *strcpy(char *dest, const char *src)$/;"	f
+strlen	string/string.c	/^inline int strlen(const char *src)$/;"	f
+switch_page_directory	common/vmm.c	/^void switch_page_directory (page_directory_t  *pd)$/;"	f
+switch_to	common/schedule.c	/^void switch_to (struct context *prev , struct context *next)$/;"	f
+task_state	include/thread.h	/^typedef enum task_state$/;"	g
+task_struct	include/thread.h	/^struct task_struct $/;"	s
+thread	entry/main.c	/^int thread (void *args)$/;"	f
+thread_exit	common/thread.c	/^void thread_exit ()$/;"	f
+tick	common/timer.c	/^u32int tick = 0  ;$/;"	v
+timer_callback	common/timer.c	/^void  timer_callback (registers_t  *regs)$/;"	f
+type	include/multiboot.h	/^	u32int  type ;$/;"	m	struct:mmap_entry_t
+u16int	include/common.h	/^typedef unsigned short u16int ;$/;"	t
+u32int	include/common.h	/^typedef unsigned int   u32int ;$/;"	t
+u8int	include/common.h	/^typedef unsigned char  u8int  ;$/;"	t
+unmap	common/vmm.c	/^void unmap (u32int va)$/;"	f
+useresp	include/isr.h	/^	u32int    eip , cs , eflags , useresp , ss ;$/;"	m	struct:registers
+va_arg	include/printk.h	29;"	d
+va_end	include/printk.h	30;"	d
+va_list	include/printk.h	/^typedef char*   va_list ;$/;"	t
+va_start	include/printk.h	28;"	d
+vbe_control_info	include/multiboot.h	/^	u32int vbe_control_info;$/;"	m	struct:multiboot_t
+vbe_interface_len	include/multiboot.h	/^	u32int vbe_interface_len;$/;"	m	struct:multiboot_t
+vbe_interface_off	include/multiboot.h	/^	u32int vbe_interface_off;$/;"	m	struct:multiboot_t
+vbe_interface_seg	include/multiboot.h	/^	u32int vbe_interface_seg;$/;"	m	struct:multiboot_t
+vbe_mode	include/multiboot.h	/^	u32int vbe_mode;$/;"	m	struct:multiboot_t
+vbe_mode_info	include/multiboot.h	/^	u32int vbe_mode_info;$/;"	m	struct:multiboot_t
+video_memory	montior/montior.c	/^u16int     *video_memory  =  (u16int*)0xB8000;$/;"	v
+vsprintfa	montior/printk.c	/^int   vsprintfa (va_list format ,va_list  args)$/;"	f
+wait_proc_head	common/schedule.c	/^struct task_struct  *wait_proc_head = 0 ;$/;"	v	typeref:struct:task_struct
