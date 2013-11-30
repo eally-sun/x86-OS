@@ -27,9 +27,8 @@ idt_ptr_t     idt_ptr ;
 
 //isr_t   interrupt_handlers[256];
 
-
-/*8259芯片控制*/
-void init_idt () 
+//8258芯片的控制
+void init_con_idt () 
 {
 	outb(0x20 , 0x11); //ICW1  初始化，并且设置工作的方式是上升沿触发，间隔8秒，多级连片，写ICW4
 	outb(0xA0 , 0x11);
@@ -47,17 +46,10 @@ void init_idt ()
 	outb(0xA1, 0x0);
 
 
- 
 
-	
-	idt_ptr.limit = sizeof (idt_entry_t)*256 -1 ;
-	idt_ptr.base  = (u32int )&idt_entries ;
-        printk ("idt:0x%x\n", idt_ptr.base);
-	
-
-	memset ((u8int*)&idt_entries , 0 , sizeof (idt_entry_t)*256);
-	memset ((u8int*)&interrupt_handlers, 0 , sizeof (isr_t)*256);
-
+}
+void init_idt_set_gate ()
+{
 	/*用于中断处理*/
 	idt_set_gate( 0, (u32int)isr0 , 0x08, 0x8E);
 	idt_set_gate( 1, (u32int)isr1 , 0x08, 0x8E);
@@ -110,6 +102,25 @@ void init_idt ()
 	idt_set_gate (47, (u32int)irq15,  0x08, 0x8E);
 
 	idt_set_gate(255, (u32int)isr255, 0x08, 0x8E);
+
+
+}
+
+
+/*8259芯片控制*/
+void init_idt () 
+{
+	init_con_idt () ;
+
+	idt_ptr.limit = sizeof (idt_entry_t)*256 -1 ;
+	idt_ptr.base  = (u32int )&idt_entries ;
+       
+        printk ("idt:0x%x\n", idt_ptr.base);
+
+	memset ((u8int*)&idt_entries , 0 , sizeof (idt_entry_t)*256);
+	memset ((u8int*)&interrupt_handlers, 0 , sizeof (isr_t)*256);
+        
+	init_idt_set_gate () ;
 	idt_flush((u32int)&idt_ptr);
 
 }
@@ -120,7 +131,6 @@ static void idt_set_gate (u8int num , u32int base , u16int sel ,u8int flags)
 	idt_entries[num].self = sel ; 
 	idt_entries[num].flag = flags ;
 
-
-	idt_flush((u32int)&idt_ptr);
+        idt_flush((u32int)&idt_ptr);
 
 }

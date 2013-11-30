@@ -37,12 +37,8 @@ gdt_ptr_t       gdt_ptr ;
 
 void init_gdt () 
 {
-	monitor_write ("gdt:");
 	gdt_ptr.limit = (sizeof (gdt_entry_t )*Segmet_Max) -1 ;  //初始化段描述符表的长度
-	printk ("%d\n", sizeof (gdt_entry_t));
 	gdt_ptr.base = (u32int)&gdt_entries;      //计算段描述符表的首地址a
-	printk ("helo word\n");
-        printk ("gdt : 0%x\n" , gdt_ptr.base);  //这个地址是在1MB之上的.
 
 	gdt_set_gate (0, 0 , 0 , 0, 0) ; //处理器规定第一个描述符表是空描述符(哑描述符和 NULL 描述符),
                                       //这是寄存器和内存在初始化值会是0 ， 加上程序的设计，就会无意的用0来作为索引来选择描述符

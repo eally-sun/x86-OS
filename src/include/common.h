@@ -32,5 +32,6 @@ void   outb (u16int , u8int value);
 u8int  inb (u16int port );
 u16int inw (u16int port);
 void   osti () ; 
+void   ccli () ; 
 #endif 
 

@@ -19,8 +19,7 @@
 #include "montior.h"
 #include "isr.h"
 
-
-
+//ISR
 void isr_handler (registers_t  *regs)
 {
 	if (regs->int_no >= 32)
@@ -34,11 +33,9 @@ void isr_handler (registers_t  *regs)
 		isr_t   handler = interrupt_handlers[regs->int_no];
 		handler (regs);
 	}
-       /* 
-	monitor_write ("received interrupt");
-	monitor_write_dec (regs->int_no);
-	monitor_write("\n");*/
 }
+
+//IRQ
 void irq_handler (registers_t  *regs)
 {
  
@@ -48,20 +45,14 @@ void irq_handler (registers_t  *regs)
 	}
 	outb (0x20 , 0x20);
 	
-	//monitor_write_dec (regs.int_no);
-	//monitor_write("\n");
-	//regs.int_no = regs.int_no + 32 ;
 	if (interrupt_handlers[regs->int_no] )
 	{
-          //      monitor_write ("go\n");
-		isr_t handler = interrupt_handlers[regs->int_no];
+                isr_t handler = interrupt_handlers[regs->int_no];
 		handler (regs);
 	}
 }
-void register_interrupt_handler (u8int n , isr_t handler)
+//注册中断
+void register_interrupt_handler (u8int n , isr_t  handler)
 {
-//	monitor_write ("yes\n");
-//	monitor_write_dec (n);
-//	monitor_write("\n");
 	interrupt_handlers[n] = handler ;
 }

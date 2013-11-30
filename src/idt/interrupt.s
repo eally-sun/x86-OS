@@ -9,7 +9,7 @@
  [GLOBAL isr%1] 
  isr%1:
      cli
-     push byte 0 
+     push byte 0  ;占位
      push byte %1
      jmp isr_common_stub
 %endmacro

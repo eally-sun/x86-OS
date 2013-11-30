@@ -67,5 +67,14 @@ u16int inw (u16int port)
         return ret ;
 	
 }
-
+//打开中断
+void osti () 
+{
+	asm volatile ("sti");
+}
+//关闭中断
+void ccli ()
+{
+	asm volatile ("cli");
+}
 
