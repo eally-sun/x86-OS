@@ -66,6 +66,7 @@ u32int  create_thread (u32int (*fn) (void *), void *arg)
 	{
 		tail = tail->next ;
 	}
+	//将任务添加到队列的末尾
         tail->next = new_task;
 
 	return new_task->pid ;
